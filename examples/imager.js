@@ -4,11 +4,23 @@ module.exports = {
     items: {
       // keepNames: true,
       resize: {
-        mini : '300x200',
-        preview: '800x600'
+        mini: {
+          resize: {
+            '300x200'
+          }
+        },
+        preview: {
+          resize: {
+            '800x600'
+          }
+        }
       },
       crop: {
-        thumb: '200x200'
+        thumb: {
+          resize: {
+            '200x200'
+          }
+        }
       },
       resizeAndCrop: {
         large: {
@@ -20,7 +32,11 @@ module.exports = {
 
     gallery: {
       crop: {
-        thumb: '100x100'
+        thumb: {
+          resize: {
+            '100x100'
+          }
+        }
       }
     }
   },
